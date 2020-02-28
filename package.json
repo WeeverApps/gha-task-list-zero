@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build ./action.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   "homepage": "https://github.com/WeeverApps/gha-task-list-zero#readme",
   "dependencies": {
     "@actions/core": "1.2.2",
-    "@actions/github": "2.1.1"
+    "@actions/github": "2.1.1",
+    "probot-actions-adapter": "1.0.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.21.1"
   }
 }

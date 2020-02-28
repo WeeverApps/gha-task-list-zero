@@ -9,7 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./dist/ # Uses an action in the dist
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'

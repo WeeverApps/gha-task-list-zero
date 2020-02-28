@@ -1,13 +1,8 @@
 name: 'Task List Zero'
 description: 'Ensure all tasks are checked'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+branding:
+  icon: 'check-circle'
+  color: 'green'
 runs:
   using: 'node12'
   main: 'dist/index.js'
