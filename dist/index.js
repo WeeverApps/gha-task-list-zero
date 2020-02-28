@@ -45454,11 +45454,15 @@ module.exports = robot => {
           .html_url}): ${status}`
       );
 
+      robot.log(`Body: ${body}`);
+
+      robot.log(`isUnchecked: ${isUnChecked}`);
+
       context.github.repos.createStatus(
         context.repo({
           sha: context.payload.pull_request.head.sha,
           state: status,
-          target_url: "https://github.com/settings/apps/task-list-zero",
+        //  target_url: "https://github.com/settings/apps/task-list-zero",
           description: status
             ? "task list not completed yet"
             : "ready for the next steps",
