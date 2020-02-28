@@ -21,6 +21,10 @@ module.exports = robot => {
           .html_url}): ${status}`
       );
 
+      robot.log(`Body: ${body}`);
+
+      robot.log(`isUnchecked: ${isUnChecked}`);
+
       context.github.repos.createStatus(
         context.repo({
           sha: context.payload.pull_request.head.sha,
