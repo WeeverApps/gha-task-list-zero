@@ -1,21 +1,3 @@
-# Hello world javascript action
+# Task List Zero GH Action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
-
-## Inputs
-
-### `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/hello-world-javascript-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+This action checks to see if a PR's task lists are all checked, and passes status checks if so.
