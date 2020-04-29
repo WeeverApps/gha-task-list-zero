@@ -10,7 +10,7 @@ module.exports = robot => {
       const title = context.payload.pull_request.title;
       const body = context.payload.pull_request.body;
       const isUnChecked = /-\s\[\s\]/g.test(body);
-      const status = isUnChecked ? "pending" : "success";
+      const status = isUnChecked ? "failure" : "success";
 
       robot.log(
         `Updating PR "${title}" (${context.payload.pull_request
