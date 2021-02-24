@@ -61,7 +61,7 @@ module.exports = robot => {
 /***/ 407:
 /***/ ((module) => {
 
-module.exports = eval("require")("probot-actions-adapter");
+module.exports = eval("require")("adapter-github-actions");
 
 
 /***/ })
