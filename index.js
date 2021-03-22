@@ -19,7 +19,7 @@ module.exports = robot => {
 
       robot.log(`isUnchecked: ${isUnChecked}`);
 
-      context.github.repos.createStatus(
+      context.octokit.repos.createStatus(
         context.repo({
           sha: context.payload.pull_request.head.sha,
           state: status,
