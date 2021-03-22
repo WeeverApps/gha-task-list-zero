@@ -84616,7 +84616,7 @@ module.exports = robot => {
 
       robot.log(`logging body: ${body}`);
 
-      context.octokit.repos.createStatus(
+      context.octokit.repos.createCommitStatus(
         context.repo({
           sha: context.payload.pull_request.head.sha,
           state: status,
