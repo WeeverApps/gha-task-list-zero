@@ -64372,7 +64372,7 @@ module.exports = [["a140","",62],["a180","",32],["a240","",62],["a280",
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
 // Require the adapter
-const { adapt } = __webpack_require__(295);
+const adapt = __webpack_require__(295);
 
 // Require your Probot app's entrypoint, usually this is just index.js
 const probot = __webpack_require__(947);

@@ -1,5 +1,5 @@
 // Require the adapter
-const { adapt } = require('@probot/adapter-github-actions');
+const adapt = require('@probot/adapter-github-actions');
 
 // Require your Probot app's entrypoint, usually this is just index.js
 const probot = require('./index');
